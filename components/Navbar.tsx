@@ -15,7 +15,7 @@ const Navbar = () => {
     return (
         <div>
             <div className="navbar bg-base-100 shadow rounded-2xl ">
-                <div className="navbar-start">
+                <div className="navbar-start px-3.5">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                             <svg
@@ -37,7 +37,7 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <Link href={""} className=" text-xl"><span className='text-red-900 font-extrabold'>Q</span>uickCart</Link>
+                    <Link href={""} className=" text-xl"><span className='text-red-900 text-2xl font-extrabold'>Q</span>uickCart</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">

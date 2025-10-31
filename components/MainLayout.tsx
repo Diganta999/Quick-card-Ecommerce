@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero, { CarouselItem } from './Hero'
+import Gallery from './Gallery';
 
 const MainLayout = () => {
   const carouselItems: CarouselItem[] = [
@@ -33,6 +34,7 @@ const MainLayout = () => {
       <Hero  items={carouselItems}
           autoPlay={true}
           interval={4000}></Hero>
+          <Gallery></Gallery>
     </div>
   )
 }
