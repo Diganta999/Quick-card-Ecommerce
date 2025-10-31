@@ -1,44 +1,17 @@
 import Link from 'next/link';
 import React from 'react'
 import { Button } from './ui/button';
+import { MdOutlineManageAccounts } from 'react-icons/md';
 
 const Navbar = () => {
     const navLinks = (
-    <>
-      <li>
-        <Link
-          href="/"
-          className="text-muted-foreground hover:text-primary transition-colors duration-200"
-        >
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/about"
-          className="text-muted-foreground hover:text-primary transition-colors duration-200"
-        >
-          Shop
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/blog"
-          className="text-muted-foreground hover:text-primary transition-colors duration-200"
-        >
-          About Us
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="/contact"
-          className="text-muted-foreground hover:text-primary transition-colors duration-200"
-        >
-          Contact
-        </Link>
-      </li>
-    </>
-  );
+        <>
+            <li><Link href="/"className="text-muted-foreground hover:text-primary transition-colors duration-200">Home</Link></li>
+            <li><Link href="/about" className="text-muted-foreground hover:text-primary transition-colors duration-200">Shop</Link></li>
+            <li><Link href="/blog" className="text-muted-foreground hover:text-primary transition-colors duration-200">  About Us</Link></li>
+            <li><Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors duration-200">  Contact</Link> </li>
+        </>
+    );
     return (
         <div>
             <div className="navbar bg-base-100 shadow rounded-2xl ">
@@ -64,7 +37,7 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <Link href={""} className=" text-xl"><span className='text-red-900 font-extrabold'>Q</span>uickCart</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
@@ -73,7 +46,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <button className="btn">Account</button>
+                    <button className="btn"> <span><MdOutlineManageAccounts className='text-xl' /></span>Account</button>
                 </div>
             </div>
         </div>
