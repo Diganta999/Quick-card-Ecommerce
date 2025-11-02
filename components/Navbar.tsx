@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import React from 'react'
 import { Button } from './ui/button';
-import { MdOutlineManageAccounts } from 'react-icons/md';
+import { MdOutlineManageAccounts } from 'react-icons/md'; 
 
 const Navbar = () => {
     const navLinks = (
@@ -53,4 +52,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar;
